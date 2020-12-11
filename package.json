@@ -1,0 +1,44 @@
+{
+  "name": "fashion-digital-test-task",
+  "description": "fashion-digital-test-task",
+  "author": "Konstantin Peterson <konstantin@pluschnikow.de>",
+  "version": "0.1.0",
+  "scripts": {
+    "start": "node ./build/src/index.js",
+    "start:dev": "nodemon --config nodemon.json src/index.ts",
+    "test": "jest --ci ./src",
+    "build": "tsc -outDir build",
+    "lint": "eslint ./src --ext ts"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "testPathIgnorePatterns": [
+      "/node_modules/",
+      "/build/"
+    ],
+    "transform": {
+      "^.+\\.tsx?$": "ts-jest"
+    }
+  },
+  "dependencies": {
+    "csv-parser": "^3.0.0",
+    "fastify": "^3.9.1",
+    "node-fetch": "^2.6.1"
+  },
+  "devDependencies": {
+    "@types/jest": "^26.0.18",
+    "@types/node": "^14.14.11",
+    "@types/node-fetch": "^2.5.7",
+    "@typescript-eslint/eslint-plugin": "^4.9.1",
+    "@typescript-eslint/parser": "^4.9.1",
+    "eslint": "^7.15.0",
+    "eslint-config-prettier": "^7.0.0",
+    "eslint-plugin-prettier": "^3.2.0",
+    "jest": "^26.6.3",
+    "nodemon": "^2.0.6",
+    "prettier": "^2.2.1",
+    "ts-jest": "^26.4.4",
+    "ts-node": "^9.1.1",
+    "typescript": "^4.1.2"
+  }
+}

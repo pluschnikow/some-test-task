@@ -1,0 +1,7 @@
+{
+  "ext": "js,ts,json",
+  "execMap": {
+    "ts": "ts-node"
+  },
+  "watch": ["config", "src"]
+}
